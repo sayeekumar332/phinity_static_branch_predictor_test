@@ -4,11 +4,11 @@ Answer :
 
 **Project selected**: 
 
-A static_branch_predict RTL module for a RISC-V pipeline — a SystemVerilog predictor that decodes branch/jump opcodes, computes sign-extended immediates, and outputs predict_branch_taken_o and predict_branch_pc_o. The repo includes rtl/static_branch_predict.sv, a cocotb harness (harness/test_static_branch_predict.py), and containerized test/synth tooling (Makefile + Docker/GHCR).
+A **static_branch_predict** RTL module for a RISC-V pipeline — a SystemVerilog predictor that decodes branch/jump opcodes, computes sign-extended immediates, and outputs predict_branch_taken_o and predict_branch_pc_o. The repo includes rtl/static_branch_predict.sv, a cocotb harness (harness/test_static_branch_predict.py), and containerized test/synth tooling (Makefile + Docker/GHCR).
 
 **My role here**: 
 
-Senior RTL engineer / exercise author. I designed the module testplan and harness, injected controlled, multi-step bugs to create a realistic debugging exercise, wrote the abstract task spec for a junior engineer, supplied a clean solution branch with fixes and a step-by-step REASONING.md, and produced Docker/cocotb integration and an LLM challenge to validate reasoning and verification.
+**Senior RTL engineer / exercise author**. I designed the module testplan and harness, injected controlled, multi-step bugs to create a realistic debugging exercise, wrote the abstract task spec for a junior engineer, supplied a clean solution branch with fixes and a step-by-step REASONING.md, and produced Docker/cocotb integration and an LLM challenge to validate reasoning and verification.
 
 **2. Cloning a repository**
 Answer : An entirely new repository was created "https://github.com/sayeekumar332/phinity_static_branch_predictor_test/tree/main" in my personal github account
