@@ -1,13 +1,13 @@
-1. Describe a select RTL project and your role.
+**1. Describe a select RTL project and your role.**
 Answer : 
 Project selected: a static_branch_predict RTL module for a RISC-V pipeline — a SystemVerilog predictor that decodes branch/jump opcodes, computes sign-extended immediates, and outputs predict_branch_taken_o and predict_branch_pc_o. The repo includes rtl/static_branch_predict.sv, a cocotb harness (harness/test_static_branch_predict.py), and containerized test/synth tooling (Makefile + Docker/GHCR).
 
 My role here: Senior RTL engineer / exercise author. I designed the module testplan and harness, injected controlled, multi-step bugs to create a realistic debugging exercise, wrote the abstract task spec for a junior engineer, supplied a clean solution branch with fixes and a step-by-step REASONING.md, and produced Docker/cocotb integration and an LLM challenge to validate reasoning and verification.
 
-2. Cloning a repository
+**2. Cloning a repository**
 Answer : An entirely new repository was created "https://github.com/sayeekumar332/phinity_static_branch_predictor_test/tree/main" in my personal github account
 
-3. Ablate it in some fashion that requires a multistep fix. Essentially, you should break the code, introduce logical errors, etc. in order to require a multistep fix. This is an open-ended task. Feel free to be creative. Please describe the changes you made.
+**3. Ablate it in some fashion that requires a multistep fix. Essentially, you should break the code, introduce logical errors, etc. in order to require a multistep fix. This is an open-ended task. Feel free to be creative. Please describe the changes you made.**
 
 Answer : 
 
@@ -47,15 +47,15 @@ How to detect
 -------------
 Run targeted tests with known fetch_pc + known immediates and verify arithmetic; inspect sign-extension of branch_imm.
 
-4. Create a spec or document as if you were asking a junior engineer to fix the issue. The spec can look something of the detail like the spec
+**4. Create a spec or document as if you were asking a junior engineer to fix the issue. The spec can look something of the detail like the spec**
 
 The document mentioning the errors in the static_branch_predict.sv module was abstractly explained without providing the explicit information has been provided.
 
-5. Create a sample solution/code file to the spec. Document how a junior engineer would reason and fix the issue step by step.  
+**5. Create a sample solution/code file to the spec. Document how a junior engineer would reason and fix the issue step by step.**
 
 A separate document called Reasoning.md has been provided in the spec in the solution branch on how to identify the error.
 
-6. Create one question/answer pair you would ask an LLM (like ChatGPT) in this repository (debugging, code completion, code comprehension, spec to RTL) that you would not expect ChatGPT to solve.
+**6. Create one question/answer pair you would ask an LLM (like ChatGPT) in this repository (debugging, code completion, code comprehension, spec to RTL) that you would not expect ChatGPT to solve.**
 
 Respond with input to the LLM and output. Please look at examples here. If your query isn't code comprehension or completion, please attach logs from the testbench to show that the expected solution code passes with no failures.
 
