@@ -79,4 +79,15 @@ This is not realistically solvable by an LLM in a closed setting. The task requi
 
 - Repairing the RTL to implement correct field concatenations.
 
+**N.B**
+- The entire project was **run on Ubuntu 20.04 LTS**
+- The **design has been found to be synthesizable** through **Yosys** (**sudo docker compose run synth - command for invoking the yosys through docker-compose.yml**. For **invoking the yosys** a separate **synth_scripts** folder has been created which contains **synth.tcl**
+- The **design has been found to be functionally correct** through **standalone invocation of Icarus and invocation of Icarus through COCOTB**
+
+     -  **sudo docker compose run verif** (Command for **invoking Icarus in GHCR**)
+     -  **make** (Command for **invoking COCOTB**)         
+
+
+
+
 
