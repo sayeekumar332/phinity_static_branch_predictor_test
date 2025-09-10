@@ -56,7 +56,7 @@ module static_branch_predict (
   // Determine if the instruction is a branch or a jump
 
   // Uncompressed branch/jump
-  assign instr_b    = instr[6:0] == 7'h64; // Error Number 1
+  assign instr_b    = instr[6:0] == 7'h64; // Error Number 1 ; Wrong Opcode Decoding
   assign instr_jal  = instr[6:0] == OPCODE_JAL;
   assign instr_jalr = instr[6:0] == OPCODE_JALR;
 
@@ -86,5 +86,5 @@ module static_branch_predict (
   // Always predict jumps taken otherwise take prediction from `instr_b_taken`
   assign predict_branch_taken_o = fetch_valid_i & (instr_jal | instr_jalr | instr_cj | instr_b_taken);
   // Calculate target
-  assign predict_branch_pc_o    = fetch_pc_i - branch_imm; // Error Number 2
+  assign predict_branch_pc_o    = fetch_pc_i - branch_imm; // Error Number 2 ; Wrong PC Calculation
 endmodule
