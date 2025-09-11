@@ -4,7 +4,7 @@ Answer :
 
 **Project selected**: 
 
-A **static_branch_predict** RTL module for a RISC-V pipeline — a SystemVerilog predictor that decodes branch/jump opcodes, computes sign-extended immediates, and outputs predict_branch_taken_o and predict_branch_pc_o. The repo includes rtl/static_branch_predict.sv, a cocotb harness (harness/test_static_branch_predict.py), and containerized test/synth tooling (Makefile + Docker/GHCR).
+A **static_branch_predict** RTL module for a RISC-V pipeline — a SystemVerilog predictor that decodes branch/jump opcodes, computes sign-extended immediates, and outputs **predict_branch_taken_o** and **predict_branch_pc_o**. The repo includes **rtl/static_branch_predict.sv**, system verilog testbench (**verif/tb_static_branch_predict.sv**) a cocotb harness (**test_static_branch_predict.py**), and containerized test/synth tooling (Makefile + Docker/GHCR).
 
 **My role here**: 
 
