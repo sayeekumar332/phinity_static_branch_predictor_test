@@ -51,7 +51,7 @@ After running the cocotb testbench `harness/test_static_branch_predict.py`, the 
 ---
 
 ## 4. Verification
-- Ran `harness/test_static_branch_predict.py` after fixes.  
+- Ran `test_static_branch_predict.py` after fixes.  
 - All tests passed successfully, including:  
   - Forward branches  
   - Backward branches  
